@@ -1,4 +1,5 @@
-/*The first line of code writes the error message to the
+/**
+The first line of code writes the error message to the
 *standard error stream using the write() function. The
 *message is enclosed in double quotes and contains a newline
 *character (\n) at the end to ensure the message is printed
@@ -16,6 +17,7 @@
 #include <unistd.h>
 int main(void)
 {
-write(STDERR_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(STDERR_FILENO, message, 59);
 return 1;
 }
