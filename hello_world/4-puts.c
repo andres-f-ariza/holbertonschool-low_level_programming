@@ -1,8 +1,8 @@
 /**
 
- * main - Prints "\"Programming is like building a multilingual puzzle"
+ *main - Prints "\"Programming is like building a multilingual puzzle"
 
- * Return: 0
+ *Return: 0
 
  */
 
