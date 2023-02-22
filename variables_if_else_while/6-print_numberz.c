@@ -1,5 +1,5 @@
 /**
-* main - Prints numbers 
+*main - Prints numbers
 * Return: 0
 *while loop
 *prints out characters from 0
@@ -15,7 +15,8 @@ c = '0';
 while (c <= '9')
 {
 putchar(c);
-c++;}
+c++;
+}
 putchar('\n');
 return (0);
 }
