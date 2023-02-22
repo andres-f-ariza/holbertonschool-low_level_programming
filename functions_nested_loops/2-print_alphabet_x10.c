@@ -15,7 +15,7 @@ while (t < 10)
 do {
 _putchar(c);
 c++;
-}while (c < 123)
+} while (c < 123)
 ;
 c = 97;
 t++;
