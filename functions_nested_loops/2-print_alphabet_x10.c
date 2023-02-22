@@ -1,9 +1,9 @@
 /**
 * print_alphabet_x10 - prints lowercase alphabet 10 times
 *The function contains a nested while loop, the second
-*loop runs inside the first loop Return: 0
+*loop runs inside the first loop.
+*Return: 0
 */
-
 
 #include "main.h"
 void print_alphabet_x10(void)
