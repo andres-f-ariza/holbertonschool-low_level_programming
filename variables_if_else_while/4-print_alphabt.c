@@ -13,7 +13,8 @@
 *"e" or 113 "q"
 */
 #include <stdio.h>
-int main(void){
+int main(void)
+{
 char c;
 for (c = 97; c < 123; c++)
 {
