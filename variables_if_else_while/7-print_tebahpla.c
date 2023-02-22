@@ -15,7 +15,7 @@ c = 122;
 while (c > 96)
 {
 putchar(c);
-c--
+c--;
 }
 putchar('\n');
 return (0);
