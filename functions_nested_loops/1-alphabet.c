@@ -8,7 +8,7 @@
 #include "main.h"
 void print_alphabet(void)
 {
-nt c;
+int c;
 c = 97;
 while (c < 123)
 {
