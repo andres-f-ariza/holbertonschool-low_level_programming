@@ -1,4 +1,4 @@
-/** 
+/**
 * main - Prints digits
 * Return: 0
 *while loop to print the numbers from
