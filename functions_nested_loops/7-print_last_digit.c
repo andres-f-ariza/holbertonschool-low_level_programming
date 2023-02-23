@@ -7,7 +7,8 @@
 *the input integer n and return it as an absolute value.
 *The function first computes the absolute value of n using the
 *abs() function from the standard library, and then
-*calculates the remainder when it is divided by 10 using the modulus operator(%).
+*calculates the remainder when it is divided by
+*10 using the modulus operator(%).
 *This gives the last digit of the input integer.
 *The function then converts the last digit to a character
 *by adding it to the ASCII code of the character '0'
@@ -17,7 +18,7 @@
 *parameter n is an integer. If the input is not an integer or is
 *outside the range of representable integers, the behavior of
 *this function is undefined.
-* Return: last digit of 
+* Return: last digit of
 */
 #include "main.h"
 #include <stdlib.h>
