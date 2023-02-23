@@ -5,7 +5,7 @@
 *if true, it will multiply the value by -1, in
 *order to obtain it as positive*as an absolute value.
 *if false it will return the same value.
-*Return: Absolute value of n 
+*Return: Absolute value of n
 */
 
 #include "main.h"
