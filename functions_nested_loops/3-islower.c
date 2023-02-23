@@ -13,6 +13,7 @@
 *name starts with an underscore, which is generally reserved for system-define
 *symbols, so using this function name in user-defined code may not
 *be a good practice.
+*@c: To prove
 *Return: 1 if lowercase, 0 otherwise
 */
 int _islower(int c)
