@@ -19,7 +19,7 @@
 *this function is undefined.
 * Return: last digit of 
 */
-
+#include "main.h"
 #include <stdlib.h>
 int print_last_digit(int n)
 {
