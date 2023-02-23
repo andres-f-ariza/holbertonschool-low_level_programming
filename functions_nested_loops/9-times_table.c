@@ -80,8 +80,7 @@ _putchar(c + '0');
 if (b != 9 && ((b + 1) * a) < 10)
 {								       {
 double_space_comma();
-}
-else if (b != 9 && ((b + 1) * a) >= 10)
+}else if (b != 9 && ((b + 1) * a) >= 10)
 {
 single_space_comma();
 }
