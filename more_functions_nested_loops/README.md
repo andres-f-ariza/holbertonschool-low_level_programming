@@ -177,3 +177,8 @@ You are not allowed to use long
 You are not allowed to use arrays or pointers
 
 You are not allowed to hard-code special values
+
+File:main.h
+
+The prototypes of all your functions and the prototype of the function _putchar are included in this file.
+
