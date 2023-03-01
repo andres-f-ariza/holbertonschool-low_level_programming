@@ -34,7 +34,8 @@ return (len);
 *allows the function to read the contents of the source array.)
 *the function copies the contents of the source array
 *into the destination array and returns a pointer to the destination array.
-*int len: Declare an integer variable len to*store the length of the source array.
+*int len: Declare an integer variable len to
+*store the length of the source array.
 *int i: Declare an integer variable i to use as a loop counter.
 *len = _strlen(src): Calculate the length of the source array using
 *the _strlen function
@@ -46,7 +47,7 @@ return (len);
 *in the destination array. The * operator
 *is used to access the values pointed to by
 *the dest and src pointers. return (dest): Return a pointer to the desti
-nation
+*nation
 *array.
 *Return: pointer to dest
 */
