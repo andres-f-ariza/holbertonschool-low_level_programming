@@ -11,8 +11,8 @@
 *end of the string.
 *3.Inside the loop, the length len is incremented by 1 for each
 *character of the string that is encountered.
-*4.The index i is also incremented by 1 in each iteration of the*
-loop.
+*4.The index i is also incremented by 1 in each iteration of the
+*loop.
 *5.When the end of the string is reached, the function returns the
 *value of len.
 *Return: Lenght of the string
