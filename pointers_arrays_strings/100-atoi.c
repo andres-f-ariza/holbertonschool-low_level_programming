@@ -68,15 +68,16 @@ int sign;
 sign = 0;
 ret = 0;
 len = _strlen(s);
-for(i = 0; i < len; i++)
+for (i = 0; i < len; i++)
 {
 if (*(s + i) == 45)
 sign = sign + 1;
 else if (*(s + i) >= 48 && *(s + i) <= 57)
-ret = (ret * 10) + (*(s + i) - '0');
+ret = (ret * 10) + (*(s + i) -'0');
 else if (ret > 0)
 break;
 }
-if(sign % 2 != 0)ret = ret * -1;
+if (sign % 2 != 0)
+ret = ret * -1;
 return (ret);
 }
