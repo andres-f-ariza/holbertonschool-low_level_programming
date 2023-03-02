@@ -1,83 +1,40 @@
 #include "main.h"
 
 /**
-*_strlen - returns the length of a string.
-* @s: Pointer to string to measure
-* Return: Lenght of the string
-*/
-
-int _strlen(char *s)
-{
-int i;
-int len;
-i = 0;
-len = 0;
-while (*(s + i) != '\0')
-{
-len = len + 1;
-i++;
-}
-return (len);
-}
-
-/**
 * _atoi - convert a string to an integer.
-* @s: Pointer to string to translate
-*The code you provided is a C function named _atoi that takes
-*a single argument: a pointer to a character array s.
-*unsigned int i: Declare an unsigned integer
-*variable i to use as a loop counter.
-*unsigned int len: Declare an unsigned integer variable
-*len to store the length of the input string s.
-*int ret: Declare an integer variable ret to store
-*the result of the conversion from string to integer.
-*int sign: Declare an integer variable sign to
-*keep track of the sign of the integer value.sign = 0:
-*Initialize the sign variable to zero.
-*ret = 0: Initialize the result variable to zero.
-*len = _strlen(s): Calculate the length of the input
-*string s using the _strlen function
-*for (i = 0; i < len; i++): Loop through each character in the input string.
-*if (*(s + i) == 45): Check if the current
-*character*is a minus sign (ASCII code 45). If it is,
-*increment the sign variable to indicate a negative value.
-*else if (*(s + i) >= 48 &&
-*(s + i) <= 57): Check if the current
-*character is a digit (ASCII codes 48 to 57). If it is, convert the
-*character to its corresponding integer value using the '0'
-*character as a reference, and add it to the ret variable.
-*else if (ret > 0): If the current character is not
-*a digit and the ret variable is already greater than zero, exit the
-*loop. This is to handle cases where the input string
-*contains non-digit characters after the digits that should
-*be used in the integer conversion.
-*else if (ret > 0): If the current character is not a digit
-*and the ret variable is already greater than zero,
-*exit the loop. This is to handle cases where the input string contains
-*non-digit characters after the digits that should be used
-*in the integer conversion.
-*Return: Int from string
+* @s: the string to be converted.
+*This code defines a function called _atoi which
+*takes a character pointer s as input and returns an integer.
+*The function starts by initializing two variables: sign and num. sign is set to 1,
+*and num is set to 0.The function then enters a do-while loop.
+*The loop continues until the value pointed to by s is null (\0).
+*Inside the loop, the function checks the value pointed to
+*by s.If the value is a minus sign (-), sign
+*is multiplied by -1 to toggle between positive and negative numbers.
+*If the value is a digit (0-9), the value is added to num by first multiplying num
+*by 10 and then adding the numeric value of the character.
+*If the value is not a digit and num is greater than 0,
+*the loop breaks.After the loop, the function
+*returns the product of num and sign.Overall, the _atoi
+*function attempts to convert a string of characters to an integer.
+*It takes into account a leading negative sign
+*and ignores non-numeric characters after the
+*first numeric character is encountered.
+*Return: The integer value of the comverted string.
 */
 
 int _atoi(char *s)
 {
-unsigned int i;
-unsigned int len;
-int ret;
-int sign;
-sign = 0;
-ret = 0;
-len = _strlen(s);
-for (i = 0; i < len; i++)
-{
-if (*(s + i) == 45)
-sign = sign + 1;
-else if (*(s + i) >= 48 && *(s + i) <= 57)
-ret = (ret * 10) + (*(s + i) -'0');
-else if (ret > 0)
+int sign = 1;
+unsigned int num = 0;
+do{
+if (*s == '-')
+sign *= -1;
+else if (*s >= '0' && *s <= '9')
+num = (num * 10) + (*s - '0');
+else if (num > 0)
 break;
 }
-if (sign % 2 != 0)
-ret = ret * -1;
-return (ret);
+while (*s++);
+return (num * sign);
 }
