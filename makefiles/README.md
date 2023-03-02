@@ -95,5 +95,39 @@ The "all" target is the default target that compiles the source files into objec
 
 Overall, this code is a comprehensive Makefile rule that includes targets for cleaning and rebuilding the project, making it easier to manage and update the build process.
 
+File: 4-Makefile
+
+Requirements:
+name of the executable: school
+rules: all, clean, fclean, oclean, re
+all: builds your executable
+clean: deletes all Emacs and Vim temporary files along with the executable
+oclean: deletes the object files
+fclean: deletes all Emacs and Vim temporary files, the executable, and the object files
+re: forces recompilation of all source files
+variables: CC, SRC, OBJ, NAME, RM, CFLAGS
+CC: the compiler to be used
+SRC: the .c files
+OBJ: the .o files
+NAME: the name of the executable
+RM: the program to delete files
+CFLAGS: your favorite compiler flags: -Wall -Werror -Wextra -pedantic
+
+The all rule should recompile only the updated source files
+The clean, oclean, fclean, re rules should never fail
+You are not allowed to have a list of all the .o files
+
+The given code is a Makefile rule that compiles two source code files, "main.c" and "school.c", using the gcc compiler, and creates an executable binary file named "school". It also includes several additional targets for cleaning and rebuilding the project.
+
+The Makefile rule defines six variables: "CC", "SRC", "OBJ", "NAME", "RM", and "CFLAGS". "CC" is assigned the value "gcc", which specifies the C compiler to be used. "SRC" is assigned the value "school.c main.c", which specifies the source code files to be compiled. "OBJ" is a list of object files to be created from the source code files, where the ".c" extension in each source file is replaced with the ".o" extension. "NAME" is the name of the output binary file to be created. "RM" is the command used to remove files. "CFLAGS" is a list of compiler flags that are passed to the compiler during compilation, and includes options for enabling additional warnings and pedantic mode.
+
+The "all" target is the default target that compiles the source files into object files, using the CFLAGS, and then links them together to create the executable binary file. The "clean" target removes all generated files, including the binary executable and any backup files. The "oclean" target removes only the object files. The "fclean" target combines the functionality of the "clean" and "oclean" targets, removing all generated files and object files. The "re" target cleans the project and rebuilds it from scratch.
+
+Overall, this code is a comprehensive Makefile rule that includes compiler flags for enabling additional warnings and pedantic mode during compilation, as well as targets for cleaning and rebuilding the project. This makes it easier to manage and update the build process, while also improving code quality through additional warnings and strict mode.
+
+
+
+
+
 
 
