@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 #include <string.h>
 char *_strncat(char *dest, char *src, int n)
 {
@@ -15,5 +15,5 @@ char *_strncat(char *dest, char *src, int n)
 		lendest++;
 		i++;
 	}
-	return (dest);
+	return (dest);
 }
