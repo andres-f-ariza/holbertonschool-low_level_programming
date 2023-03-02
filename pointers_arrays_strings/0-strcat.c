@@ -1,9 +1,9 @@
 #include "main.h"
 /**
 *_strcat - concatenate two strings
-*@src - source pointer
-*@dest - destiny pointer
-OA*Return:dest
+*@src: source pointer
+*@dest: destiny pointer
+*Return:void
 */
 char *_strcat(char *src, char *dest)
 {
@@ -21,6 +21,6 @@ dest[i] = src[j];
 i++;
 j++;
 }
-dest[i++] = '\0';
+dest[i] = '\0';
 return (dest);
 }
