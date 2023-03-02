@@ -63,7 +63,7 @@ int _atoi(char *s)
 {
 unsigned int i;
 unsigned int len;
-long ret;
+int ret;
 int sign;
 sign = 0;
 ret = 0;
