@@ -26,7 +26,7 @@ void print_diagsums(int *a, int size)
  *that belong to the diagonal, the loop contains a cummulative
  *variable that adds up every element in the first diagonal.
  */
-	for (i = 0; i < ts; i + size + 1)
+	for (i = 0; i < ts; i += size + 1)
 	{
 		sum1 = sum1 + a[i];
 	}
@@ -39,7 +39,7 @@ void print_diagsums(int *a, int size)
  *the loop contains a cummulative
  *variable that adds up every element in the second diagonal.
  */
-	for (i = (size - 1); i <= (ts - size - 1); i + size - 1)
+	for (i = (size - 1); i <= (ts - size - 1); i += size - 1)
 	{
 		sum2 = sum2 + a[i];
 	}
