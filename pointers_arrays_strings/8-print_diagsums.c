@@ -6,6 +6,7 @@
  * a square matrix of integers.
  * @a: Pointer to matrix
  * @size: Size of square matrix
+ *Return: always 0
  */
 
 void print_diagsums(int *a, int size)
@@ -16,10 +17,6 @@ int sum1;
 int sum2;
 sum1 = 0;
 sum2 = 0;
-
-/**
-*ts - calculates the total number of elements
-*/
 ts = size * size;
 /**
 *this loop goes through all the elements of the square matrix
