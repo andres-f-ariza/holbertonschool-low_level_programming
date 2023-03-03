@@ -11,6 +11,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+typedef int make_iso_compilers_happy;
 int i;
 int j;
 char *ret;
