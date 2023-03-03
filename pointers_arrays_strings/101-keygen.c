@@ -14,11 +14,6 @@
 Define the length of the password to be generated
 */
 
-
-
-int main(void)
-{
-
 int main(void)
 {
 char password[PASSWORD_LENGTH + 1] = {0};
@@ -90,9 +85,6 @@ printf("Random Password: %s\n", password);
 /**
 *Print the generated password
 */
-
-
 return 0;
 
 }
-
