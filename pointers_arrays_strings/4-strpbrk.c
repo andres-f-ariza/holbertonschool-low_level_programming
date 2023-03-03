@@ -5,18 +5,12 @@
 
 
 /**
-
- * _strpbrk - gets the length of a prefix substring.
-
- * @s: String to search in
-
- * @accept: Bytes to search on s
-
- * Return: Pointer to byte in s that matches with one of the bytes
-
- * in accept, or NULL if no such byte is found.
-
- */
+* _strpbrk - gets the length of a prefix substring.
+* @s: String to search in
+* @accept: Bytes to search on s
+* Return: Pointer to byte in s that matches with one of the bytes
+* in accept, or NULL if no such byte is found.
+*/
 
 
 
