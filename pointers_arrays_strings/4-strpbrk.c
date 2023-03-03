@@ -21,46 +21,41 @@
 
 
 char *_strpbrk(char *s, char *accept)
-	
 {
-	
-	int i;
-	
-	int j;
-	
+int i;
+int j;
+
 	char *ret;
-	
 
-	
+
+
 	ret = NULL;
-	
-	for (i = 0; s[i] != '\0'; i++)
-		
-	{
-		
-		for (j = 0; accept[j] != '\0'; j++)
-			
-		{
-			
-			if (s[i] == accept[j])
-				
-			{
-				
-				ret = &s[i];
-				
-				break;
-				
-			}
-			
-		}
-		
-		if (ret != NULL)
-			
-			break;
-		
-	}
-	
-	return (ret);
-	
-}
 
+	for (i = 0; s[i] != '\0'; i++)
+
+	{
+
+		for (j = 0; accept[j] != '\0'; j++)
+
+		{
+
+			if (s[i] == accept[j])
+
+			{
+
+				ret = &s[i];
+
+				break;
+
+			}
+
+		}
+		if (ret != NULL)
+
+			break;
+
+	}
+
+	return (ret);
+
+}
