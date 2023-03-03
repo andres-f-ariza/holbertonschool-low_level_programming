@@ -14,12 +14,12 @@ char *_strchr(char *s, char c)
 	int i;
 	char *ret;
 
-	ret = NULL;
+	a = NULL;
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			ret = &s[i];
+			a = &s[i];
 			break;
 		}
 	}
