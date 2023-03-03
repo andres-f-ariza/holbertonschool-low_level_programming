@@ -7,10 +7,9 @@
 /**
 *main - generates random valid passwords for the program 101-crackme.
 *@
-*Return:password 
+*Return:password
 */
-
-int PASSWORD_LENGTH = 6;
+#define PASSWORD_LENGTH 6
 /**
 Define the length of the password to be generated
 */
@@ -19,18 +18,7 @@ Define the length of the password to be generated
 
 int main(void)
 {
-#include <stdio.h>
-  
-#include <stdlib.h>
-  
-#include <time.h>
-  
 
-  
-#define PASSWORD_LENGTH 6
-  
-
-  
 int main(void)
 {
 char password[PASSWORD_LENGTH + 1] = {0};
@@ -38,13 +26,13 @@ char password[PASSWORD_LENGTH + 1] = {0};
 *Declare a char array to store the password
 *and initialize it with null terminators
 */
- 
+
 char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  
+
 /**
 *Define the set of characters that can be used
 *to generate the password
-*/  
+*/
 
 srand(time(NULL));
 
@@ -54,12 +42,12 @@ srand(time(NULL));
 *generator needs to be initialized with a "seed" value.
 *The seed value is used as the starting point for the random number
 *generator's algorithm to generate a sequence of numbers.
-*One common way to generate a seed value for a random number 
+*One common way to generate a seed value for a random number
 *generator is to use the current time. This is because the
 *current time is always changing, so it's unlikely that the
 *same seed value will be used twice.
 */
- 
+
 for (int i = 0; i < PASSWORD_LENGTH; i++)
 {
   /**
@@ -73,11 +61,11 @@ int index = rand() % (sizeof(charset) - 1);
 *length of charset - 1
 *The rand() function generates a random integer between 0 and
 *RAND_MAX, where RAND_MAX is a constant defined in the library.
-*To get a random index between 0 and the length of 
+*To get a random index between 0 and the length of
 *charset - 1, we need to do the following steps:
 *Calculate the length of charset using the sizeof() operator.
 *Subtract 1 from the length of charset because array indices are 0-based.
-*(This means that the first element of an array is at 
+*(This means that the first element of an array is at
 *index 0, the second element is at index 1, and so on.)
 *Use the modulo operator (%) to generate a random integer
 *between 0 and the length of charset - 1.
@@ -101,10 +89,10 @@ printf("Random Password: %s\n", password);
 
 /**
 *Print the generated password
-*/  
+*/
 
-  
+
 return 0;
-  
+
 }
 
