@@ -19,7 +19,9 @@ if (*s2 == '*')
  *to match any string that could come after the * character
  */
 if (wildcmp(s1, s2 + 1))
+{
 return 1;
+}
 /**
  *We recursively call wildcmp() with the next s1
  *pointer value and the current s2 pointer value
@@ -28,7 +30,7 @@ return 1;
 if (*s1 != '\0' && wildcmp(s1 + 1, s2))
 {
 return 1;
-
+}
 
 /**
  *If neither of the above recursive calls return 1
@@ -50,5 +52,4 @@ return wildcmp(s1 + 1, s2 + 1);
  *match, the strings cannot be considered identical
  */
 return 0;
-}
 }
