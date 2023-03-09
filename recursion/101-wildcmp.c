@@ -1,4 +1,4 @@
-qint wildcmp(char *s1, char *s2)
+int wildcmp(char *s1, char *s2)
 {
 /**
  *If both strings are empty, they are identical
