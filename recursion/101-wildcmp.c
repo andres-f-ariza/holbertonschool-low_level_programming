@@ -1,4 +1,4 @@
-int wildcmp(char *s1, char *s2)
+qint wildcmp(char *s1, char *s2)
 {
 /**
  *If both strings are empty, they are identical
@@ -50,4 +50,5 @@ return wildcmp(s1 + 1, s2 + 1);
  *match, the strings cannot be considered identical
  */
 return 0;
+}
 }
