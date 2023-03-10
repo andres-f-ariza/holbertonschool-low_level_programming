@@ -16,7 +16,7 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 /**
  *argv[0] always contains the name of the program
- *%s expects a string
+ *"%s\n" expects a string
  */
 	printf("%s\n", argv[0]);
 	return (0);
