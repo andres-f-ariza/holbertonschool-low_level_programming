@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * create_array - dynamically allocates memory for an array of chars
  * and initializes all its elements with a specific char
