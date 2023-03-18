@@ -14,3 +14,8 @@ When a program needs to allocate memory on the heap, it makes a request to the o
 Heap memory is commonly used for dynamically allocated data structures, such as linked lists, trees, and arrays. It is also used for allocating memory for strings, images, and other large data structures. Because the heap is larger and more flexible than the stack, it allows programs to allocate memory dynamically at runtime, making it easier to work with complex data structures and larger datasets. However, it also requires more careful management to prevent memory leaks and other errors.
 
 POINTER TO AN INTEGER ARRAY: is a variable that stores the memory address of the first element of an integer array. This memory address points to the location in memory where the first element of the array is stored. We can then use this pointer to access the elements of the array or to pass the array to a function.
+
+POINTER TO A CHARACTER ARRAY: is a variable that stores the memory address of a single character in a program. It is declared using the * operator and the data type char
+/**
+*char *ptr;
+*/
