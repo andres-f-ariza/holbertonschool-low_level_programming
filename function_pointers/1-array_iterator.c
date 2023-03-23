@@ -3,17 +3,11 @@
 
 
 /**
-
  * array_iterator - executes a function given as a
-
  * parameter on each element of an array.
-
  * @array: Array of function arguments
-
  * @size: Size of the array
-
  * @action: Function to execute
-
  */
 
 
