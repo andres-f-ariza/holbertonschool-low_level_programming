@@ -8,13 +8,16 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t length = 0;
+	size_t lenght = 0;
 
+	// Iterate over the linked list and print n (each node's value)
 	while (h)
 	{
 		printf("%d\n", h->n);
-		length++;
+		lenght++;
 		h = h->next;
 	}
-	return (length);
+
+	// Return the number of nodes in the list
+	return (lenght);
 }

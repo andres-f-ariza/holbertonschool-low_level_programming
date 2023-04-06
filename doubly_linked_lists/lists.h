@@ -1,6 +1,14 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+/**
+ * it is necessary to include the #ifndef and #define directives at the
+ *beginning of a header file, followed by an #endif at the end. This is a common
+ *way to prevent the header file from being included multiple *times in the same
+ *program, which can cause errors due to redefinition of
+ *variables, functions, and types. By using these directives, you ensure that
+ *the contents of the header file are only included once in the program.
+ */
 #include <stdlib.h>
 #include <stdio.h>
 
