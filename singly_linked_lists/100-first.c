@@ -4,6 +4,12 @@
  * first - Print something before main
  */
 
+/**
+ *This code defines a function called first using the __attribute__ GCC
+ *extension to mark it as a constructor function. A constructor function
+ *is a special type of function that is automatically called when the
+*program starts, before main() is executed.
+ */
 void __attribute__ ((constructor)) first()
 {
 	char *s;
