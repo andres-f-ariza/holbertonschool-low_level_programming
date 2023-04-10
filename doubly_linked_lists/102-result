@@ -1,1 +1,24 @@
+Find the largest palindrome made from the product of two 3-digit numbers.
+To solve this problem, we need to find the largest palindrome that can be expressed as the product of two 3-digit numbers.
+
+First, let's consider what a palindrome is. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward. For example, "racecar" is a palindrome.
+
+To find the largest palindrome that can be expressed as the product of two 3-digit numbers, we can start by generating all possible products of 3-digit numbers and checking each one to see if it is a palindrome. We can do this using a nested loop in a programming language like Python.
+
+
+largest_palindrome = 0
+
+for i in range(100, 1000):
+    for j in range(100, 1000):
+            product = i * j
+	            if str(product) == str(product)[::-1]: # check if the product is a palindrome
+		                if product > largest_palindrome: # check if the palindrome is the largest one found so far
+				                largest_palindrome = product
+
+print(largest_palindrome)
+
+This code generates all products of 3-digit numbers and checks each one to see if it is a palindrome. If a palindrome is found, it checks if it is the largest one found so far. The final result is the largest palindrome that was found.
+
+Running this code, we get the output:
+
 906609

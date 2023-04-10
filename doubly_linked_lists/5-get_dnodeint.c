@@ -8,15 +8,25 @@
  */
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+/**
+ *head is a pointer to the head of the list, and index is the index of the required node.
+ */
 {
 	unsigned int actual_idx = 0;
-
-	while (head)
-	{
-		if (index == actual_idx)
-			return (head);
-		head = head->next;
-		actual_idx++;
-	}
+	/**
+	 *The function uses a loop to traverse the list until the index of the current node
+	 *is equal to the required index.
+	 */
+	 while (head)
+	 {
+	 if (index == actual_idx)
+	 return (head);
+	 head = head->next;
+	 actual_idx++;
+	 }
+	 /**
+	 *If the required node is found, the function returns a pointer to it. Otherwise,
+	 *the function returns NULL.
+	 */
 	return (NULL);
 }
