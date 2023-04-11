@@ -13,7 +13,7 @@ void print_elf_header(const Elf64_Ehdr* header) {
 	printf("ELF Header:\n");
 	printf("  Magic:   ");
 	int i;
-	for (int i = 0; i < EI_NIDENT; i++) {
+	for (i = 0; i < EI_NIDENT; i++) {
 		printf("%02x ", header->e_ident[i]);
 	}
 	printf("\n");
@@ -44,12 +44,13 @@ int main(int argc, char* argv[]) {
 	if (argc != 2) {
 		print_error("Invalid number of arguments");
 	}
+	int fd;
 
-	int fd = open(argv[1], O_RDONLY);
+	fd = open(argv[1], O_RDONLY);
 	if (fd == -1) {
 		print_error("Failed to open file");
 	}
-	ssize_t bytes_read = read(fd, &header, sizeof(header));
+	size_t bytes_read = read(fd, &header, sizeof(header));
 	if (bytes_read != sizeof(header)) {
 		print_error("Failed to read ELF header");
 	}
