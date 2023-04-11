@@ -12,6 +12,7 @@ void print_error(const char* message) {
 void print_elf_header(const Elf64_Ehdr* header) {
 	printf("ELF Header:\n");
 	printf("  Magic:   ");
+	int i;
 	for (int i = 0; i < EI_NIDENT; i++) {
 		printf("%02x ", header->e_ident[i]);
 	}
@@ -38,8 +39,8 @@ void print_elf_header(const Elf64_Ehdr* header) {
 	}
 	printf("  Entry point address:               0x%lx\n", header->e_entry);
 }
-
 int main(int argc, char* argv[]) {
+	Elf64_Ehdr header;
 	if (argc != 2) {
 		print_error("Invalid number of arguments");
 	}
@@ -48,8 +49,6 @@ int main(int argc, char* argv[]) {
 	if (fd == -1) {
 		print_error("Failed to open file");
 	}
-
-	Elf64_Ehdr header;
 	ssize_t bytes_read = read(fd, &header, sizeof(header));
 	if (bytes_read != sizeof(header)) {
 		print_error("Failed to read ELF header");
