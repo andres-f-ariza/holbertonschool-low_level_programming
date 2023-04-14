@@ -1,10 +1,14 @@
-#ointer to head of the linked list
-* @key: Hash node key
-* @value: Hash node value
-* Return: the address of the new element, or NULL if it failed
-	 */
+#include "hash_tables.h"
 
-	hash_node_t *add_node(hash_node_t **head, char *key, const char *value)
+/**
+ * add_node - adds a new node at the beginning of a hash_node_t list.
+ * @head: pointer to head of the linked list
+ * @key: Hash node key
+ * @value: Hash node value
+ * Return: the address of the new element, or NULL if it failed
+ */
+
+hash_node_t *add_node(hash_node_t **head, char *key, const char *value)
 {
 	char *copy_value, *copy_key;
 	hash_node_t *ret, *actual_node;
