@@ -1,4 +1,4 @@
-#include "search_algos.h"
+#include "search_algorithm.h"
 
 /**
  * array_print - Prints an array from l to r
